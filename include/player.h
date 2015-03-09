@@ -7,7 +7,7 @@
 struct player;
 
 // Creates a new player with a given number of available bombs
-struct player* player_init(int bomb_number);
+struct player* player_init(int bomb_number, int life_number);
 void   player_free(struct player* player);
 
 // Returns the current position of the player
@@ -16,6 +16,11 @@ int player_get_y(struct player* player);
 
 // Set the direction of the next move of the player
 void player_set_current_way(struct player * player, enum direction direction);
+
+// Set, Increase, Decrease of the player's number of life
+short player_get_nb_life(struct player* player);
+void player_inc_nb_life(struct player * player);
+void player_dec_nb_life(struct player * player);
 
 // Set, Increase, Decrease the number of bomb that player can put
 int  player_get_nb_bomb(struct player * player);
@@ -30,5 +35,7 @@ int player_move(struct player* player, struct map* map);
 
 // Display the player on the screen
 void player_display(struct player* player);
+
+void perte_de_vie(struct player* player, int cas_de_perte_de_vie);
 
 #endif /* PLAYER_H_ */

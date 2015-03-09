@@ -12,7 +12,8 @@ enum cell_type {
 	CELL_BOMB, // 7
 	CELL_KEY, // 8
 	CELL_DOOR, // 9
-	CELL_CLOSED_DOOR // 10   à retirer car porte fermée codée avec b7
+	CELL_CLOSED_DOOR, // 10   à retirer car porte fermée codée avec b7
+
 };
 
 enum bonus_type {

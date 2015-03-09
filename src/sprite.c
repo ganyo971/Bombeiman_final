@@ -206,6 +206,7 @@ SDL_Surface* sprite_get_player(enum direction direction) {
 
 SDL_Surface* sprite_get_banner_life() {
 	assert(banner_life);
+
 	return banner_life;
 }
 

@@ -24,4 +24,6 @@ enum direction {
 	EAST //3
 };
 
+#define TEMPS_INVULNERABILITE_JOUEUR   10000       //10s
+
 #endif /* CONSTANT */

@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
 	SDL_EnableKeyRepeat(SDL_DEFAULT_REPEAT_DELAY, SDL_DEFAULT_REPEAT_INTERVAL);
 
 	// to obtain the DEFAULT_GAME_FPS, we have to reach a loop duration of (1000 / DEFAULT_GAME_FPS) ms
-	int ideal_speed = 1000 / DEFAULT_GAME_FPS;
+	int ideal_speed = 10000 / DEFAULT_GAME_FPS;
 	int timer, execution_speed;
 
 	// game loop
